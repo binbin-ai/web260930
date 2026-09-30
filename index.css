@@ -1,0 +1,43 @@
+/*
+.css 즉 외부에서 선택자로 주면 외부 스타일 시트
+html 내부의 <style> ~~ </style> 이런식으로 주면 내부 스타일 시트
+html 태그 속성에서 스타일을 주면 인라인 스타일 시트
+*/
+
+/* 선택자 *과 html은 거의 같은 의미이지만 html은 부모 태그와 자식 태그사이의 상대값을 가진다 */
+
+
+/* html {
+  font-size: 20px;
+} */
+
+body {
+  font-size: 20px;
+}
+
+header, main, footer {
+  margin: 10px; /* border와 외부사이 공간 */
+  padding: 20px; /* contents와 border사이 공간 */
+  border: solid 5px #CCCCCC;
+}
+
+h1 {
+  /* font-size: 5em; /* em = 부모 태그의 5배(20px * 5 = 100px) */
+  color : green;
+  background-color: lightpink;
+  border: solid 2px red;
+  text-align: center;
+  /* width: 70vw; /* vw : 전체 웹페이지의 50프로, 50% h1 상위 태그 내부의 50프로 */
+  padding: 50px; /* content와 border사이 공간 */
+  margin: 30px; /* border와 외부사이 공간 */
+   }
+
+.content {
+  display: inline-block;
+  width : 30%;
+  height : 100%;
+  border : solid 1px black;
+  padding: 5px;
+  margin: 5px;
+
+}
