@@ -39,5 +39,43 @@ h1 {
   border : solid 1px black;
   padding: 5px;
   margin: 5px;
+}
 
+#m1 {
+  border : solid 5px black;
+}
+
+/* [id] { /* id 속성을 가진 태그 전부 해당 */
+  /* color: blue */
+/* }  */
+
+article div::before {
+  content: '[영화소개]';
+  font-weight: 900;
+  color: darkgreen;
+}
+
+article div::after {
+  content: '(더보기..)';
+  font-style: italic;
+  color: darkgreen;
+}
+
+a {
+  text-decoation: none;
+  color: darkred;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  background-color: blue;
+  color: white;
+}
+
+a:active {
+  background-color: green;
+  color: white;
 }
