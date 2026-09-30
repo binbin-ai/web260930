@@ -11,6 +11,8 @@ html 태그 속성에서 스타일을 주면 인라인 스타일 시트
   font-size: 20px;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap');
+
 body {
   font-size: 20px;
 }
@@ -23,14 +25,24 @@ header, main, footer {
 
 h1 {
   /* font-size: 5em; /* em = 부모 태그의 5배(20px * 5 = 100px) */
-  color : green;
+  font-family: "Hi Melody", sans-serif ;
+  color : red;
   background-color: lightpink;
   border: solid 2px red;
   text-align: center;
   /* width: 70vw; /* vw : 전체 웹페이지의 50프로, 50% h1 상위 태그 내부의 50프로 */
   padding: 50px; /* content와 border사이 공간 */
   margin: 30px; /* border와 외부사이 공간 */
-   }
+}
+
+h3 {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  font-variant: small-caps;
+  
+}
 
 .content {
   display: inline-block;
@@ -41,13 +53,17 @@ h1 {
   margin: 5px;
 }
 
-#m1 {
+[id] { /* id 속성을 가진 태그 전부 해당 */
   border : solid 5px black;
+} 
+
+/* #m1 {
+  padding: 23px 5px 5px 5px;
 }
 
-/* [id] { /* id 속성을 가진 태그 전부 해당 */
-  /* color: blue */
-/* }  */
+#m3 {
+  padding: 0px 5px 5px 5px;
+} */
 
 article div::before {
   content: '[영화소개]';
@@ -59,6 +75,16 @@ article div::after {
   content: '(더보기..)';
   font-style: italic;
   color: darkgreen;
+}
+
+article div {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: lightgray;
+  padding: 15px 5px 15px 5px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -76,6 +102,10 @@ a:hover {
 }
 
 a:active {
-  background-color: green;
+  background-color: green; /* 색표기 : RGB 표기법, rgb(r, g, b), rgba(r, g, b, 불투명도) 함수 가능 */
   color: white;
+}
+
+article:nth-child(3){
+  background-color: lightgreen;
 }
